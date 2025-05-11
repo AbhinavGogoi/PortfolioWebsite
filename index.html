@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+
+<body>
+    <img class="image-gradient" src="Images/gradient.png" alt="gradient" />
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header data-aos="fade-down" data-aos-duration="1500">
+            <nav>
+                <a href="#home">HOME</a>
+                <a href="#about">ABOUT</a>
+                <a href="#projects">PROJECTS</a>
+                <a href="#contact">CONTACT</a>
+            </nav>
+        </header>
+        <main>
+            <section id="home">
+                <div class="home-content">
+                    <div class="tag-box">
+                        <div data-aos="fade-right" duration="2000" class="tag">HOME</div>
+                    </div>
+                    <h1>Welcome<br>Aboard</h1>
+                    <p class="description">
+                        Abhinav, a cybersecurity enthusiast and a frontend developer, based in Assam, India. Worked on
+                        projects of different interests and domains. <br><br>
+                        I have a creative and innovative approach for building eye-pleasing and functional websites
+                        along with fast problem-solving for complex problems.
+                    </p>
+                    <div class="buttons">
+                        <a href="https://www.linkedin.com/in/abhinav-gogoi-98967a29b/" class="btn-linkedin"
+                            target="_blank">LinkedIn &gt;</a>
+                        <a href="https://github.com/AbhinavGogoi" class="btn-github" target="_blank">GitHub &gt;</a>
+                    </div>
+                </div>
+                <spline-viewer class="robot-3d"
+                    url="https://prod.spline.design/C8wySfnb-EdwuxuU/scene.splinecode"></spline-viewer>
+                <div class="divider">
+                    <spline-viewer url="https://prod.spline.design/49RoxcePW5q4Ybu9/scene.splinecode"></spline-viewer>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="about-content">
+                    <div class="tag-box">
+                        <div data-aos="fade-right" duration="1000" class="tag">ABOUT ME</div>
+                    </div>
+                    <div class="card-container">
+                        <div class="card" data-aos="fade-left" duration="1000">
+                            <h2>EDUCATION</h2>
+                            <div class="cardcontent">
+                                <b style="font-size: 1.5rem;">SECONDARY SCHOOLING</b>
+                                <ul>
+                                    <li><b>School:</b> Delhi Public School</li>
+                                    <li><b>Board:</b> CBSE</li>
+                                    <li><b>Year:</b> 2021-2022</li>
+                                    <li><b>Percentage:</b> 92.3%</li>
+                                </ul>
+                                <b style="font-size: 1.5rem;">BACHELOR'S DEGREE</b>
+                                <ul>
+                                    <li><b>School:</b> KIIT Bhubaneshwar</li>
+                                    <li><b>Degree:</b> B.Tech</li>
+                                    <li><b>Specialization:</b> CSCE</li>
+                                    <li><b>Current Year:</b> 3rd Year</li>
+                                    <li><b>Running CGPA:</b> 9.09</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-right" duration="1500">
+                            <div class="cardcontent">
+
+                                <h2>PHOTO</h2>
+                                <div class="circular-image-container">
+                                    <img src="Images/Abhinav.jpg" alt="Your Photo" />
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card" data-aos="fade-left" duration="2500">
+                            <div class="cardcontent">
+                                <ul style="font-size: 1.25rem;">
+                                    <h2>SKILLS</h2>
+                                    <li><b>Languages:</b>: Python, C Programming, JAVA, SQL, HTML, CSS, JavaScript</li>
+                                    <li><b>Frameworks & Libraries:</b>: Pandas, Numpy</li>
+                                    <li><b>Platforms & Tools: </b>Kali Linux, Ubuntu, MySQL, Jupyter Notebook, Visual
+                                        Studio Code, Wireshark, Cisco
+                                        Tracer, Microsoft Excel, PowerPoint</li>
+                                    <li><b>Subjects & Concepts:</b> Data Structures and Algorithms, DBMS, OOPS, Network
+                                        and
+                                        Information Security, Operating System, Software Engineering </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <div class="project-content">
+                    <div class="tag-box">
+                        <div class="tag">PROJECTS</div>
+                    </div>
+                    <div class="project-cards" data-aos="flip-up" data-aos-duration="1000">
+                        <div class="cards">
+                            <img src="Images/HTTP server.png" alt="">
+                            <h3>HTTP Server</h3>
+                            <div class="btn-container">
+                                <button class="btn-github"
+                                    onclick="location.href='https://github.com/AbhinavGogoi/CodeCrafters-HTTPServer';">GitHub</button>
+                                <button class="btn-manual" onclick="showModal('Files/HTTP-server.pdf')">Manual</button>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="Images/Stock.png" alt="">
+                            <h3>NAS and RL based Stock Price prediction</h3>
+                            <div class="btn-container">
+                                <button class="btn-github"
+                                    onclick="location.href='https://github.com/AbhinavGogoi/Stock_Price_Prediction';">GitHub</button>
+                                <button class="btn-manual" onclick="showModal('Files/Minor-Project.pdf')">Manual</button>
+                            </div>
+                        </div>
+                        <div class="cards">
+                            <img src="Images/Health.png" alt="">
+                            <h3>Patient Centric Access for Health Records with Security via Blockchain</h3>
+                            <button class="btn-manual" onclick="showModal('Files/Blockchain_Research_paper.pdf')">Document</button>
+                        </div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                        <div class="cards"></div>
+                    </div>
+                </div>
+                <div>
+                    <!-- Modal -->
+                    <div id="previewModal" class="modal">
+                        <div class="modal-content">
+                            <button class="close-btn" onclick="closeModal()">×</button>
+                            <embed id="pdfViewer" src="" type="application/pdf" width="100%" height="500px" />
+                            <div style="margin-top: 10px; text-align: right;">
+                                <a id="downloadLink" class="btn-github" download target="_blank">Download PDF</a>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="contact">
+                <div class="content2">
+                    <div class="tag-box">
+                        <div class="tag">CONTACT</div>
+                    </div>
+                    <div class="contact-content">
+                        <div class="circles">PHONE NUMBER: +91 9864295706</div>
+                        <div class="circles"><img src="email.jpg" alt=""></div>
+                        <div class="circles">Address: Duliajan, Dibruagarh, Assam</div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.89/build/spline-viewer.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
